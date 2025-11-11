@@ -1,0 +1,34 @@
+.scroller {
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.track {
+  display: flex;
+  gap: 1rem; /* matches your Tailwind gap-4 look */
+  width: max-content;
+  animation: scroll-rtl var(--duration, 80s) linear infinite;
+}
+
+.scroller:hover .track {
+  animation-play-state: paused;
+}
+
+/* accessibility for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    animation: none;
+    transform: none;
+  }
+}
+
+/* moves content from right to left */
+@keyframes scroll-rtl {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
