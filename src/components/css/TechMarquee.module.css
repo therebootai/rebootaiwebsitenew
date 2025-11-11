@@ -1,0 +1,28 @@
+.scroller {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.track {
+  display: inline-flex;
+  gap: 1rem;
+  white-space: nowrap;
+  width: max-content;
+}
+
+/* Mobile only: infinite scroll */
+@media (max-width: 768px) {
+  .track {
+    animation: scroll-ltr var(--duration, 45s) linear infinite;
+  }
+
+  @keyframes scroll-ltr {
+     0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+  }
+}

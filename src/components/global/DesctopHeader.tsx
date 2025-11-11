@@ -152,12 +152,12 @@ const scheduleClose = () => {
         }`}
       >
         {scrolled ? (<div className=" w-full  absolute">
-          <div className=" absolute w-[20rem] h-[20rem] left-[40%] bg-custom-green bottom-0 blur-[120px] rounded-b-full"></div>
-           <div className=" absolute w-[20rem] h-[20rem] left-0 bg-custom-darkblue bottom-0 blur-[120px] rounded-b-full"></div>
-           <div className=" absolute w-[20rem] h-[20rem] right-0 bg-custom-darkblue bottom-0 blur-[120px] rounded-b-full"></div>
+          <div className=" absolute size-[15rem] md:size-[20rem] left-[40%] bg-custom-green bottom-8 blur-[120px] rounded-b-full"></div>
+           <div className=" absolute size-[15rem] md:size-[20rem] left-0 bg-custom-darkblue bottom-8 blur-[120px] rounded-b-full"></div>
+           <div className=" absolute size-[15rem] md:size-[20rem] right-0 bg-custom-darkblue bottom-8 blur-[120px] rounded-b-full"></div>
 
         </div>):""}
-        <div className=" max-w-[1200px] w-full  h-full flex justify-between items-center  py-4  xl:px-16 lg:px-8  px-4">
+        <div className=" max-w-[1200px] w-full  h-full flex justify-between items-center  py-4   lg:px-8  px-4">
           {/* Logo */}
 
           <Link href={"/"}>
@@ -230,7 +230,7 @@ const scheduleClose = () => {
           <div className="hidden lg:flex items-center lg:gap-5 text-white xlg:text-lg text-base xl:text-xl font-medium">
             <button className="btn" ref={btnRef}
       id="downloadBtn">
-              <ContactIcon className=" size-[2rem]" />
+              <ContactIcon className=" size-[1.5rem]" />
               Contact Us
             </button>
           </div>

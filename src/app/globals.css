@@ -1,4 +1,8 @@
 @import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+@import "swiper/css/scrollbar";
 
 :root {
   --background: #ffffff;
@@ -45,7 +49,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding: 0 28px;
+    padding: 0 1rem;
     border-radius: 6px;
     font-weight: 700;
     font-size: 16px;
@@ -54,7 +58,7 @@ body {
     border: none;
     cursor: pointer;
     overflow: hidden;
-    height: 3.5rem;
+    height: 3rem;
   }
 
   /* === Cursor-following radial glow === */
@@ -92,4 +96,8 @@ body {
   .btn-outline:hover {
     background: rgba(79, 160, 255, 0.1);
   }
+
+/* client scroll */
+
+ 
 
