@@ -9,6 +9,7 @@ import OurRecentWorkSection from "@/components/home/OurRecentWorkSection";
 import OurServiceSection from "@/components/home/OurServiceSection";
 import SomeDesignSection from "@/components/home/SomeDesignSection";
 import TechnologySection from "@/components/home/TechnologySection";
+import TestimonialSection from "@/components/home/TestimonialSection";
 import WhyUsSection from "@/components/home/WhyUsSection";
 import MainPageTemplate from "@/template/MainPageTemplate";
 
@@ -26,6 +27,7 @@ export default function Home() {
       <WhyUsSection/>
       <OurRecentWorkSection/>
       <SomeDesignSection/>
+      <TestimonialSection/>
       <OurBlogSection/>
       <Footer/>
     </MainPageTemplate>

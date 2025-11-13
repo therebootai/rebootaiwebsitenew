@@ -6,9 +6,9 @@ const WhyUsSection = () => {
   const [activeTab, setActiveTab] = useState("mission");
 
   return (
-    <section className="w-full bg-white py-12 px-4">
+    <section className="w-full bg-white">
       
-      <div className="max-w-[1200px] mx-auto md:px-8 lg:px-16">
+      <div className="max-w-[1200px] mx-auto lg:p-8 p-4">
        
         <div className="text-left mb-5">
           <p className="text-sm text-gray-500 tracking-widest pb-4">Why Us</p>
@@ -136,7 +136,7 @@ const WhyUsSection = () => {
           
            <div className="w-full lg:w-1/3">
 
-            {/* <ContactForm />  call Contact Form components */}
+            {/* <ContactForm />  call ContactForm  from components */}
             
           </div>
         </div>

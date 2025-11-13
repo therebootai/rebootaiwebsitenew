@@ -109,7 +109,7 @@ const scheduleClose = () => {
     },
     {
       text: "Services",
-      href: "",
+      href: "/service",
     },
     {
       text: "Products",

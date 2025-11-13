@@ -111,7 +111,7 @@ export default function TechnologyRight() {
     ],
   };
 
-  // Convert to JSX
+ 
   const tabContent: Record<string, JSX.Element[]> = Object.fromEntries(
     Object.entries(tabImages).map(([key, images]) => [
       key,
@@ -132,7 +132,7 @@ export default function TechnologyRight() {
     ])
   );
 
-  // Auto-scroll logic
+
   useEffect(() => {
     const container = tabContainerRef.current;
     if (!container) return;
@@ -154,7 +154,7 @@ export default function TechnologyRight() {
     return () => clearInterval(interval);
   }, [tabs.length]);
 
-  // Manual scroll handlers
+
   const handleManualStart = () => {
     isManualScrolling.current = true;
     if (resumeTimeout.current) clearTimeout(resumeTimeout.current);
@@ -169,7 +169,7 @@ export default function TechnologyRight() {
 
   return (
     <div className="md:w-1/2 flex flex-col md:mt-0 mt-4">
-      {/* Tabs */}
+     
       <div className="mb-6">
         <div
           ref={tabContainerRef}
@@ -196,7 +196,7 @@ export default function TechnologyRight() {
         </div>
       </div>
 
-      {/* Tab Content */}
+     
       <div className="grid grid-cols-3 flex-1 border-[0.4px] border-gray-300">
         {tabContent[activeTab].map((item, i) => (
           <div
