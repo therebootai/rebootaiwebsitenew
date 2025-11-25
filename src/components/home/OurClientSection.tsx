@@ -5,7 +5,9 @@ import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import styles from "../css/OurClientSection.module.css";
 
-const OurClientSection: React.FC = () => {
+type Props = { showSection?: boolean };
+
+const OurClientSection: React.FC<Props> = ({showSection = true}) => {
 
   // Render one pass of the client cards (your original design preserved)
   const renderItems = () =>
@@ -26,6 +28,7 @@ const OurClientSection: React.FC = () => {
   return (
     <div className="flex justify-center items-center">
       <div className="w-full max-w-[1200px] lg:p-8 p-4 flex flex-col gap-4">
+        {showSection ? (
         <div className="flex flex-col gap-2">
           <h4>Our Clients</h4>
           <div className="flex justify-between items-center ">
@@ -38,6 +41,7 @@ const OurClientSection: React.FC = () => {
             </h1>
           </div>
         </div>
+        ):""}
 
         {/* Scroller wrapper (auto & infinite) */}
         <div

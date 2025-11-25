@@ -1,4 +1,3 @@
-import Footer from "@/components/global/FooterSection";
 import AboutUsSection from "@/components/home/AboutUsSection";
 import HomeBannerVideo from "@/components/home/HomeBannerVideo";
 import OurBlogSection from "@/components/home/OurBlogSection";
@@ -23,7 +22,6 @@ export default function Home() {
       <OurRecentWorkSection/>
       <SomeDesignSection/>
       <OurBlogSection/>
-      <Footer/>
     </MainPageTemplate>
   );
 }
