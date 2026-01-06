@@ -1,5 +1,6 @@
 "use client";
 import DesctopHeader from "@/components/global/DesctopHeader";
+import Footer from "@/components/global/FooterSection";
 import { ReactNode } from "react";
 
 interface TemplateProps {
@@ -19,6 +20,7 @@ const MainPageTemplate: React.FC<TemplateProps> = ({ children }) => {
         <div className=" ">
           {children}
         </div>
+        <Footer/>
       </div>
     </>
   );
