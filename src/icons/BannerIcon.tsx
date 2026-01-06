@@ -35,7 +35,7 @@ const BannerIcon = ({className}:{className?:string}) => {
           y2="33.6659"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#3FFF74" />
+          <stop stopColor="#3FFF74" />
           <stop offset="1" stop-color="#0A5BFF" />
         </linearGradient>
         <linearGradient
