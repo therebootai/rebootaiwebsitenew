@@ -18,10 +18,10 @@ const WhyUsSection = () => {
             Why Choose <span className="bg-linear-to-r  from-custom-darkblue  to-custom-green  bg-clip-text  text-transparent">Business</span> With Us?
           </h2>
         </div >
-        <div className=" flex flex-row gap-4">
+        <div className=" flex flex-col lg:flex-row gap-4">
 
        
-        <div className="flex flex-col gap-4 w-[40%]">
+        <div className="flex flex-col gap-4 w-full lg:w-[40%]">
            <div className="flex flex-wrap gap-3 ">
               <button
                 onClick={() => setActiveTab("mission")}
@@ -70,7 +70,7 @@ const WhyUsSection = () => {
 
         </div>
         
-        <div className=" w-[60%] h-full">
+        <div className="  w-full lg:w-[60%] h-full">
           <EnquerySection/>
         </div>
         </div>

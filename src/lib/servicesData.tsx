@@ -129,36 +129,108 @@ const services = [
     ],
   },
   {
-    metaTitle: "",
-    metaDesc: "",
+    metaTitle: "Top Ecommerce Website Development Agency in India",
+    metaDesc: "Work With Top 10% Custom E-Commerce Website Development Agency In India Delivering 100+ Scalable Ecommerce Solutions From Grocery To Jewellery.",
     heading: "Ecommerce Website Development",
+    description:"The first thing that you can do to transform your online business ideas to a reality business is to find the correct development partner. We create strong and well designed e-commerce sites that will contribute to the growth of your business. We can build you a successful brand online, whether it will be through an existing or a brand new business or through conversion of your existing business into an online success story. Each company is unique and must be an online shopping experience. We also develop elegant and flawlessly working sites that have easy navigation to provide your customers with an enjoyable and ease of travel. Secure payments, all-size optimization, intelligent adaptability, and integrations are only a few of the reasons why we make sure that your business does not just look good but also functions perfectly well. Reboot AI provides solutions to grow your business by offering digital solutions that are future-ready. We assist you to keep up with the evolving consumer trends and transform visitors into regular customers. ",
     category: "Web & App Development",
     serviceImg:
       "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768556603/Ecommerce_Website_Development_agyfhr.avif",
 
     imgcontent: {
-      imgsrc: "",
-      alt: "",
+      imgsrc: "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768553755/ecommerce_ksl5yb.avif",
+      alt: "Ecommerce Website Development",
     },
     videoContent: {
-      video: "",
-      text: "",
+      video: "https://res.cloudinary.com/db7fyrtvc/video/upload/v1768643567/Reel_7_Ecommerce_s4rjue.mp4",
+      text: "Top Ecommerce Website Development Agency in India",
     },
+    audiosrc:"/audio/02-E-COMMERCE-WEBSITE-DEVELOPMENT.mp3",
     slug: "ecommerce-website-development",
     leftContent: [
       {
-        question: "",
-        answer: "",
+        question: "How Can I Ensure Design & Proper Delivery?",
+        answer: "Being Top 10% custom Ecommerce development agency in India, we always deliver results But for your satisfaction we can provide 100% written assurance of design, quality & delivery.",
+      },
+       {
+        question: "Which Will Be Better Shopify Woocommerce Or Custom Coding? ",
+        answer: "It depends purely on your business goal, funding & how much do you want to scale. Shopify Woocommerce can give you initial flexibility or low price minimum setup but with time It’s costly to maintain, upgrade features & you have to depend on thor party plugin always -means security issue. But for custom coded initial price high but after that almost NIL cost or minimum AMC.",
+      },
+       {
+        question: "Features Designs Who Will Decide?",
+        answer: "As a top 10% Ecommerce developer in India we will provide best Business consultation & guidance possible ever, with futuristic AI Agent for support to 100% premium design.",
+      },
+       {
+        question: "Re-Engineer My Existing Online Store?",
+        answer: "Absolutely. To maximize conversions and sales, we can revamp your current e-commerce site with a new design, enhanced UI/UX, performance, and navigation and provide a more streamlined checkout experience.",
+      },
+       {
+        question: "What About Inventory Management?",
+        answer: "We are incorporating smart inventory systems which automatically update the stock as the sales occur. Your inventory is easy and does not make mistakes as you can monitor stock levels, low-stock warning, supplier details, and order history all on your dashboard.",
       },
     ],
     comitments: [
+    
       {
-        name: "",
-        desc: "",
+        name: "Result-Oriented Delivery",
+        desc: "we are using the success by outcome, increased conversions, greater engagement, and business growth.",
+      },
+        {
+        name: "Future-Focused Tech",
+        desc: "we prepare your business to command the future with the latest tech assemblies and development preparedness systems.",
+      },
+        {
+        name: "Custom Coded, No Formulaic Solutions",
+        desc: "we design e-commerce platforms that address your business objectives and strategy.",
+      },
+        {
+        name: "Security And Trust",
+        desc: "we incorporate advanced security measures to secure information of the customers so as to establish a long term credibility.",
       },
     ],
 
-    solutions: [{ src: "" }, { src: "" }, { src: "" }, { src: "" }],
+    solutions: [{ src: "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768556158/ecommerceecommerce_4_li9bam.avif" }, { src: "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768556157/ecommerceecommerce_6_vodnth.avif" }, { src: "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768556157/ecommerceecommerce_3_kaqans.avif" }, { src: "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768556156/ecommerceecommerce_2_kpjnad.avif" }],
+       portfolios: [
+      {
+        imgsrc:
+          "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768556158/ecommerceecommerce_4_li9bam.avif",
+        alt: "ecommerce-website-development",
+      },
+       {
+        imgsrc:
+          "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768556157/ecommerceecommerce_6_vodnth.avif",
+        alt: "ecommerce-website-development",
+      },
+       {
+        imgsrc:
+          "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768556157/ecommerceecommerce_3_kaqans.avif",
+        alt: "ecommerce-website-development",
+      },
+       {
+        imgsrc:
+          "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768556156/ecommerceecommerce_2_kpjnad.avif",
+        alt: "ecommerce-website-development",
+      },
+         {imgsrc:
+          "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768556155/ecommerceecommerce_1_chg6sr.avif",
+        alt: "ecommerce-website-development",
+      },
+       {
+        imgsrc:
+          "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768556158/ecommerceecommerce_4_li9bam.avif",
+        alt: "ecommerce-website-development",
+      },
+       {
+        imgsrc:
+          "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768556157/ecommerceecommerce_6_vodnth.avif",
+        alt: "ecommerce-website-development",
+      },
+       {
+        imgsrc:
+          "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768556157/ecommerceecommerce_3_kaqans.avif",
+        alt: "ecommerce-website-development",
+      },
+    ]
   },
   {
     metaTitle: "",
@@ -640,6 +712,8 @@ const services = [
     solutions: [{ src: "" }, { src: "" }, { src: "" }, { src: "" }],
   },
 
+  // seo pages start
+
   {
     heading: "Website Development Company in Siliguri",
     category: "SEO",
@@ -767,46 +841,100 @@ const services = [
     heading: "WEBSITE DEVELOPMENT COMPANY IN KOLKATA",
     category: "SEO",
     slug: "website-development-company-in-kolkata",
-    metaTitle: "",
-    metaDesc: "",
+    metaTitle: "Best Website Development Company in Kolkata | Reboot AI ",
+    metaDesc: "Reboot AI Powers Digital Growth In Kolkata With 100% Custom-Coded Websites, Optimised For Speed, SEO & Conversions.",
+    description:"Your website is the home of your brand, the core of your online presence, and often the very first interaction customers have with your business. At Reboot AI, recognised as one of the best website development companies in Kolkata, we excel in crafting visually striking, technically robust, and strategically built websites that will turn visitors into customers. We design websites that don't just look premium but also load fast, keep people engaged and turn everyday visitors into loyal customers. Being the best website development company in Kolkata, our team ensures that your website reflects your brand values and keeps your audience elevated while maintaining long-term success that your business can rely on. We don’t just develop websites, we create customised digital growth engines for your business. We blend creativity with clean coding, modern technology, and deep industry knowledge to deliver websites that perform with absolute precision.",
 
     serviceImg: "",
 
     imgcontent: {
-      imgsrc: "",
-      alt: "",
+      imgsrc: "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768553800/web_apps_gsndkp.avif",
+      alt: "WEBSITE DEVELOPMENT COMPANY IN KOLKATA",
     },
     videoContent: {
-      video: "",
-      text: "",
+      video: "https://res.cloudinary.com/db7fyrtvc/video/upload/v1768639583/Reel_1_Website_ks6sso.mp4",
+      text: "Best Website Development Company in Kolkata ",
     },
 
     leftContent: [
       {
-        question: "",
-        answer: "",
+        question: "Do You Provide Website Development Service At Kolkata?",
+        answer: "Yes, we provide custom website development service in Kolkata & have active clients for the past 5 years.",
+      },
+          {
+        question: "What Technology You Use For Websites?",
+        answer: "We use the latest technology for developing custom websites, like Node.Js , Nest.js for backend admin panel & Express.Js, Next.Js, Angular, Html etc for frontend.",
+      },
+       {
+        question: "How Much Do You Charge For Static & Dynamic Websites?",
+        answer: "Our charges are based on requirements like website features, functionalities, no of pages etc. For static our minimum price INR 5,000 & For dynamic INR 15,000. All fully custom & unique.",
+      }, {
+        question: "Would I Be Able To Make Changes To My Website Once It Has Been Constructed?",
+        answer: "Definitely. There will be a user-friendly admin panel in your website from which you will be able to change the texts, images, products, articles, etc. We also provide training initially.",
+      }, {
+        question: "Is​‍​‌‍​‍‌​‍​‌‍​‍‌ It Possible For You To Improve An Existing Website? ",
+        answer: "Your outdated or running site can be transformed into an energetic one with all the features like trendy design, better UI/UX, responsive layouts, increased performance, and updated features matching the latest standards and taking the conversions to the ​‍​‌‍​‍‌​‍​‌‍​‍‌​‍​‌‍​‍‌​‍​‌‍​‍‌sky.",
+      },
+      {
+        question: "Do You provide Chatbot Integration With Websites?",
+        answer: "Yes, we provide custom chatbots as required.",
       },
     ],
     comitments: [
       {
-        name: "",
-        desc: "",
+        name: "Custom Website Design",
+        desc: "custom websites built to reflect your unique brand personality and your business goals, all without using pre-built templates, because your business is unique.",
+      },
+      {
+        name:"E-Commerce Website Design",
+        desc:"secure and scalable online stores that make it simple for you to sell your products and services online easily. Whether you’re selling 10 products or 10,000, we engineer systems to work the way you need."
+      },
+      {
+        name:"UI/UX Design",
+        desc:"highly accessible and engaging experiences that help visitors connect with your brand longer and enjoy your website. Everything is carefully designed to not just look good but provide users with a seamless experience that holds the user's attention."
+      },{
+        name:"Web Application Development",
+        desc:"powerful website applications that are designed for speed, performance, and a solution you can trust for the long haul. Customised websites that simplify workflows, help your business operate more easily, and help you provide better digital solutions."
       },
     ],
 
-    solutions: [{ src: "" }, { src: "" }, { src: "" }, { src: "" }],
+    solutions: [{ src: "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768556535/websitewebsite_4_2_yq5lh5.avif" ,alt:"WEBSITE DEVELOPMENT COMPANY IN KOLKATA"}, { src: "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768556533/websitewebsite_3_2_in58uo.avif",alt:"WEBSITE DEVELOPMENT COMPANY IN KOLKATA" }, { src: "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768556534/websitewebsite_4_1_pegeif.avif",alt:"WEBSITE DEVELOPMENT COMPANY IN KOLKATA" }, { src: "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768556531/websitewebsite_11_qnvfpw.avif" ,alt:"WEBSITE DEVELOPMENT COMPANY IN KOLKATA"}],
     whyChoose: {
-      heading: "",
-      details: ["", "", ""],
+      heading: "Why Choose Reboot AI as Your Website Development Partner in Kolkata?",
+      details: ["<strong>Strong Understanding Of Kolkata’s Digital Market</strong> we understand the digital landscape, behaviour, preferences, and the local digital trends of users. This gives you an advantage strategically.",
+         "<strong>Latest Technology Stacks</strong> we leverage the most efficient tools to build future-ready websites that grow with your business effortlessly. ",
+          "<strong>Complete Project Lifecycle Management</strong> everything is done by our own team, so there is no bringing in extra hands, no delays, and zero compromise.", "<strong>Performance Driven Websites</strong> your user experience will be flawless with the websites that we design. We ensure fast loading times with smooth interactions and zero lag."],
     },
     readySection: {
-      name: "",
-      details: "",
+      name: "OUR APPROACH TO WEB DESIGN",
+      details: "We ensure a strong foundation aligned with your expectations. We start with a significant understanding of your business, including who your audience is, what your business goals, expectations, and brand message are. <br/> Before​‍​‌‍​‍‌​‍​‌‍​‍‌ the coding work starts, you have a full glimpse of the design and creative style that will be followed. This step specifies the appearance of your site and the way it will be experienced, naturally, from colours to how users ​‍​‌‍​‍‌​‍​‌‍​‍‌navigate. <br/> Our developers make the design come alive using scalable code. We prioritise clean structure, speed, security, responsiveness, and everything else by testing the website several times. <br/> We launch your website when everything is perfect, it is now tested, quality checked, and your website is live. That is not the end because we continue to look into the performance and provide continuous support towards it.",
     },
     portfolios: [
       {
-        imgsrc: "",
-        alt: "",
+        imgsrc: "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768556533/websitewebsite_3_2_in58uo.avif",
+        alt: "WEBSITE DEVELOPMENT COMPANY IN KOLKATA",
+      },
+       {
+        imgsrc: "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768556531/websitewebsite_11_qnvfpw.avif",
+        alt: "WEBSITE DEVELOPMENT COMPANY IN KOLKATA",
+      }, {
+        imgsrc: "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768556524/websitewebsite_1_2_q5eekq.avif",
+        alt: "WEBSITE DEVELOPMENT COMPANY IN KOLKATA",
+      }, {
+        imgsrc: "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768556528/websitewebsite_2_1_dndail.avif",
+        alt: "WEBSITE DEVELOPMENT COMPANY IN KOLKATA",
+      }, {
+        imgsrc: "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768556526/websitewebsite_10_xysxki.avif",
+        alt: "WEBSITE DEVELOPMENT COMPANY IN KOLKATA",
+      }, {
+        imgsrc: "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768556530/websitewebsite_2_2_omlcv3.avif",
+        alt: "WEBSITE DEVELOPMENT COMPANY IN KOLKATA",
+      }, {
+        imgsrc: "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768556540/websitewebsite_6_1_k767nx.avif",
+        alt: "WEBSITE DEVELOPMENT COMPANY IN KOLKATA",
+      }, {
+        imgsrc: "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768556544/websitewebsite_8_wktisu.avif",
+        alt: "WEBSITE DEVELOPMENT COMPANY IN KOLKATA",
       },
     ],
   },
