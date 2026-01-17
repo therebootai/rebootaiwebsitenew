@@ -1,146 +1,80 @@
 "use client";
 
 import { useState } from "react";
+import EnquerySection from "./EnquerySection";
 
 const WhyUsSection = () => {
   const [activeTab, setActiveTab] = useState("mission");
 
   return (
-    <section className="w-full bg-white">
+    <section className="w-full ">
       
-      <div className="max-w-[1200px] mx-auto lg:p-8 p-4">
+      <div className="max-w-[1200px] mx-auto lg:p-8 p-4 flex flex-col gap-4 w-full">
+        
        
-        <div className="text-left mb-5">
+        <div className="text-left ">
           <p className="text-sm text-gray-500 tracking-widest pb-4">Why Us</p>
           <h2 className="text-3xl md:text-3xl font-bold">
             Why Choose <span className="bg-linear-to-r  from-custom-darkblue  to-custom-green  bg-clip-text  text-transparent">Business</span> With Us?
           </h2>
-        </div>
+        </div >
+        <div className=" flex flex-row gap-4">
 
        
-        <div className="flex flex-col lg:flex-row items-start gap-8">
-         
-          <div className="w-full lg:w-2/3">
-          
-            <div className="flex flex-wrap gap-3 mb-6">
+        <div className="flex flex-col gap-4 w-[40%]">
+           <div className="flex flex-wrap gap-3 ">
               <button
                 onClick={() => setActiveTab("mission")}
                 className={`px-5 py-2 rounded-md font-medium transition ${
                   activeTab === "mission"
-                    ? "bg-[linear-gradient(90deg,#0061ff,#4fa0ff)] text-white"
-                    : "bg-[#FFFFFF] text-gray-500 hover:bg-gray-200 border-[0.4px] border-gray-300"
+                    ? "bg-linear-to-b from-custom-lightblue to-custom-darkblue text-white"
+                    : "bg-custom-darkblue/20 text-custom-darkblue hover:bg-linear-to-b from-custom-lightblue to-custom-darkblue border-[0.4px] border-custom-darkblue hover:text-white transition-colors duration-700"
                 }`}
               >
-                Mission & Vision
+                Our Mission
               </button>
               <button
-                onClick={() => setActiveTab("leads")}
+                onClick={() => setActiveTab("vission")}
                 className={`px-5 py-2 rounded-md font-medium transition ${
-                  activeTab === "leads"
-                    ? "bg-[linear-gradient(90deg,#0061ff,#4fa0ff)] text-white"
-                    : "bg-[#FFFFFF] text-gray-500 hover:bg-gray-200 border-[0.5px] border-gray-300"
+                  activeTab === "vission"
+                    ? "bg-linear-to-b from-custom-lightblue to-custom-darkblue text-white"
+                    : "bg-custom-darkblue/20 text-custom-darkblue hover:bg-linear-to-b from-custom-lightblue to-custom-darkblue border-[0.4px] border-custom-darkblue hover:text-white transition-colors duration-700"
                 }`}
               >
-                Why Need Business Leads
-              </button>
-              <button
-                onClick={() => setActiveTab("brand")}
-                className={`px-5 py-2 rounded-md font-medium transition ${
-                  activeTab === "brand"
-                    ? "bg-[linear-gradient(90deg,#0061ff,#4fa0ff)] text-white"
-                   : "bg-[#FFFFFF] text-gray-500 hover:bg-gray-200 border-[0.5px] border-gray-300"
-                }`}
-              >
-                Why Make Brand Identity
+                Our Vision
               </button>
             </div>
-
-    
-            <div className="bg-white ">
+              <div className=" ">
               {activeTab === "mission" && (
-                <div className="grid md:grid-cols-2 gap-8 md:divide-x-[2px] md:divide-[#CCCCCC]">
-                 
-                  <div className="md:pr-5">
-                    <h3 className="text-xl font-semibold mb-3 text-custom-darkblue">
-                      Mission
-                    </h3>
+                <div className=" text-sm">
+                   
                     <p className="text-gray-600 leading-relaxed">
-                      Lorem ipsum dolor sit amet consectetur. Mattis felis velit
-                      enim feugiat pellentesque non ut. Cum quis consectetur neque
-                      phasellus mauris urna integer. Proin lacus lorem facilisis
-                      convallis dolor nullam. Cursus dolor ullamcorper pellentesque
-                      leo scelerisque amet faucibus sem sed.
+                    Our core business is to create and develop intelligent digital solutions, which will streamline business processes to deliver measurable outcomes. Basically, we are involved in creating a very efficient web site, mobile application, ERP, and custom software that is the precise solution to the unique issues of every client. We do embrace ourselves with strategy in every project we undertake and we ensure a comprehensive development of such projects and in providing the measurable return, it is our pledge. With the inclusion of on-going education, technological innovation, and collaboration with clients, we developed simplifying the use of digital tools as our ultimate objective and quality technology not exclusive to few. Our mission is to be the digital companion of the business and accompany them throughout the entire journey, starting with the first idea to the implementation and beyond.
                     </p>
-                  </div>
-
-                  <div className="md:pl-5">
-                    <h3 className="text-xl font-semibold mb-3 text-custom-darkblue">
-                      Vision
-                    </h3>
-                    <p className="text-gray-600 leading-relaxed">
-                      Lorem ipsum dolor sit amet consectetur. Posuere et tellus
-                      lorem tristique scelerisque. At mauris etiam morbi in sagittis
-                      tristique hendrerit. Lectus ac ornare tincidunt nibh mattis
-                      egestas faucibus. Eget congue purus quis senectus viverra ut
-                      felis.
-                    </p>
-                  </div>
+                
+                
                 </div>
               )}
+                {activeTab === "vission" && (
+                <div className=" text-sm">
+                    <p className="text-gray-600 leading-relaxed">
+                     We desire to be the best technology partner of businesses across the whole of India, by providing them innovative future-ready scalable, and digital solutions. We aim at enabling any company to make it easy to have smart, efficient and scalable digital solutions, whether it is a start up or a large enterprise. We will be determined to employ modern and yet realistic technology to indeed drastically transform the way business is conducted and not just passively. We believe in making a difference, simplifying, and maintaining the online experiences of our customers. In essence, we find ourselves playing the major role in the expansion of the digital economy in diverse fields by being dependable and the application of the most recent developmental practices which will render the businesses the power they need to thrive in the digital world.  
+                    </p>
 
-              {activeTab === "leads" && (
-                <div>
-                  <h3 className="text-xl font-semibold text-custom-darkblue">
-                    Why Need Business Leads
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    Business leads are the foundation of customer acquisition.
-                    They help you identify and connect with potential clients who
-                    are genuinely interested in your services, improving sales
-                    efficiency and driving consistent growth.
-                    Business leads are the foundation of customer acquisition.
-                    They help you identify and connect with potential clients who
-                    are genuinely interested in your services, improving sales
-                    efficiency and driving consistent growth.
-                    Business leads are the foundation of customer acquisition.
-                    They help you identify and connect with potential clients who
-                    are genuinely interested in your services, improving sales
-                  </p>
-                </div>
-              )}
-
-              {activeTab === "brand" && (
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-custom-darkblue">
-                    Why Make Brand Identity
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    A strong brand identity creates recognition, trust, and
-                    emotional connection with your audience. It helps distinguish
-                    your business in a crowded market and strengthens long-term
-                    loyalty.
-                    A strong brand identity creates recognition, trust, and
-                    emotional connection with your audience. It helps distinguish
-                    your business in a crowded market and strengthens long-term
-                    loyalty.
-                    A strong brand identity creates recognition, trust, and
-                    emotional connection with your audience. It helps distinguish
-                    your business in a crowded market and strengthens long-term
-                    loyalty.
-                  </p>
+                
                 </div>
               )}
             </div>
-          </div>
+         
+   
 
-          
-           <div className="w-full lg:w-1/3">
-
-            {/* <ContactForm />  call ContactForm  from components */}
-            
-          </div>
         </div>
-      </div>
+        
+        <div className=" w-[60%] h-full">
+          <EnquerySection/>
+        </div>
+        </div>
+        </div>
     </section>
   );
 };

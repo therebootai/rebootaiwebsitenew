@@ -4,11 +4,13 @@ import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import BlogCards from "../card/BlogCards";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export interface BlogItem {
   img: string; // non-null for Next/Image
   createdAt: string;
   category: string;
+  slug:string;
   comments: number | string;
   viewsCount: number | string;
   heading: string;
@@ -78,6 +80,7 @@ const OurBlogSection = () => {
                 day: "numeric",
               }),
               category: blog.category,
+              slug:blog.slug,
               comments: blog.comments || 0,
               viewsCount: blog.viewsCount || 0,
               heading: blog.blogTitle,
@@ -137,12 +140,11 @@ const OurBlogSection = () => {
             {!loading &&
               relatedBlogs.map((blog: BlogItem) => (
                 <SwiperSlide key={blog.blogId} className="!h-auto">
-                  <div
-                    onClick={() => handleBlogClick(blog)}
+                  <Link href={`/blogs/${blog.slug || ""}`}
                     className=" cursor-pointer !h-full "
                   >
                     <BlogCards blog={blog} />
-                  </div>
+                  </Link>
                 </SwiperSlide>
               ))}
           </Swiper>

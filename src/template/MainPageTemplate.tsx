@@ -1,6 +1,7 @@
 "use client";
 import DesctopHeader from "@/components/global/DesctopHeader";
 import Footer from "@/components/global/FooterSection";
+import MobileFixFooter from "@/components/global/MobileFixFooter";
 import { ReactNode } from "react";
 
 interface TemplateProps {
@@ -21,6 +22,7 @@ const MainPageTemplate: React.FC<TemplateProps> = ({ children }) => {
           {children}
         </div>
         <Footer/>
+        <MobileFixFooter/>
       </div>
     </>
   );

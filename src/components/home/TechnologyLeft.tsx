@@ -7,7 +7,7 @@ export default function TechnologyLeft() {
   const btnRef = useRef<HTMLButtonElement>(null);
 
   return (
-    <div className="md:w-1/2 flex flex-col justify-center">
+    <div className=" flex flex-col justify-center">
       <h2 className="text-3xl font-bold text-gray-900">
         We Are Using Latest Technology Tools{" "}
         <span className="text-blue-600">Smart AI-Powered</span> Solution

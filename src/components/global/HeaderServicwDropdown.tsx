@@ -13,11 +13,17 @@ const HeaderServicwDropdown = () => {
   // Define services with their submenu, description, and image info
   const services = [
     {
-      name: "Web Development",
+      name: "Web & App Development",
       icon: <WebDevelopment />,
       submenu: [
-        { name: "Frontend Development", href: "/web/frontend" },
-        { name: "Backend Development", href: "/web/backend" },
+        { name: "Custom Website Development", href: "/services/custom-website-development" },
+        { name: "Ecommerce Website Development", href: "/services/" },
+        { name: "Web Application Development", href: "/services/" },
+        { name: "SAAS Development", href: "/services/" },
+        { name: "Mobile Apps Development", href: "/services/" },
+        { name: "AI & ML Development", href: "/services/" },
+
+
       ],
       description:
         "At Reboot AI Private Limited, our mission is to enhance the competitiveness and agility of companies through innovative software solutions. We empower individuals and organizations with exceptional design, reliable technology, and ongoing support to drive transformation within their industries. Based in Kolkata, West Bengal, we offer comprehensive services across India.",
@@ -27,34 +33,41 @@ const HeaderServicwDropdown = () => {
       name: "Marketing Solutions",
       icon: <MarketingSolution />,
       submenu: [
-        { name: "SEO Services", href: "/marketing/seo" },
-        { name: "Social Media Marketing", href: "/marketing/social" },
+        { name: "Google Marketing", href: "/services/" },
+        { name: "Social Media Marketing", href: "/services/" },
+        { name: "Whatsapp API Marketing", href: "/services/" },
+        { name: "Influencer Marketing", href: "/services/" },
+        { name: "Lead Generation Service", href: "/services/" },
+        { name: "PR & Branding", href: "/services/" },
+
+
       ],
-      description:
-        "Innovative marketing strategies to boost your brand presence and maximize ROI.",
-      imgSrc: "/images/marketing.png",
+    description:
+        "At Reboot AI Private Limited, our mission is to enhance the competitiveness and agility of companies through innovative software solutions. We empower individuals and organizations with exceptional design, reliable technology, and ongoing support to drive transformation within their industries. Based in Kolkata, West Bengal, we offer comprehensive services across India.",
+      imgSrc: "/images/webdev.png",
     },
     {
       name: "Smart Solutions",
       icon: <SmartSolution  />,
       submenu: [
-        { name: "AI Integration", href: "/smart/ai" },
-        { name: "Automation", href: "/smart/automation" },
+        { name: "Business Consultation", href: "/services/" },
+        { name: "IT Consultation", href: "/services/" },
+        { name: "Cloud Server Setup", href: "/services/" },
+        { name: "UI & UX Solution", href: "/services/" },
+
       ],
       description:
-        "Cutting-edge smart technology solutions designed to streamline your business processes.",
-      imgSrc: "/images/smart.png",
+        "At Reboot AI Private Limited, our mission is to enhance the competitiveness and agility of companies through innovative software solutions. We empower individuals and organizations with exceptional design, reliable technology, and ongoing support to drive transformation within their industries. Based in Kolkata, West Bengal, we offer comprehensive services across India.",
+      imgSrc: "/images/webdev.png",
     },
     {
       name: "Industries We Serve",
       icon: <IndutriesWeServe />,
       submenu: [
-        { name: "Healthcare", href: "/industries/healthcare" },
-        { name: "Finance", href: "/industries/finance" },
       ],
       description:
-        "Specialized software solutions tailored for various industry requirements.",
-      imgSrc: "/images/industries.png",
+        "At Reboot AI Private Limited, our mission is to enhance the competitiveness and agility of companies through innovative software solutions. We empower individuals and organizations with exceptional design, reliable technology, and ongoing support to drive transformation within their industries. Based in Kolkata, West Bengal, we offer comprehensive services across India.",
+      imgSrc: "/images/webdev.png",
     },
   ];
 
@@ -64,14 +77,14 @@ const HeaderServicwDropdown = () => {
   const selectedService = services[selectedIndex];
 
   return (
-    <div className="w-[60%] p-8 bg-white relative rounded-3xl inset-shadow-custom-light">
+    <div className="w-[70%] p-8 bg-white relative rounded-3xl inset-shadow-custom-light">
       <div className="w-full flex flex-row gap-4">
         <div className="w-[30%] flex flex-col gap-4">
           {services.map((item, index) => (
             <button
               key={index}
-              className={`w-full flex justify-between items-center cursor-pointer text-custom-black hover:text-custom-darkblue hover:font-semibold ${
-                index === selectedIndex ? "font-semibold text-custom-darkblue" : "font-normal"
+              className={`w-full flex justify-between items-center cursor-pointer text-custom-black hover:text-custom-darkblue hover:font-normal ${
+                index === selectedIndex ? "font-medium text-custom-darkblue" : "font-normal"
               }`}
               onClick={() => setSelectedIndex(index)}
             >
@@ -94,7 +107,7 @@ const HeaderServicwDropdown = () => {
                     <Link
                       href={item.href}
                       key={index}
-                      className="w-full flex gap-8 items-center text-custom-black hover:text-custom-darkblue"
+                      className="w-full flex justify-between items-center text-custom-black hover:text-custom-darkblue"
                     >
                       <div className="flex gap-2 items-center text-sm">
                         <div>{item.name}</div>
@@ -104,7 +117,7 @@ const HeaderServicwDropdown = () => {
                   ))}
                 </div>
                 <div className="w-full flex flex-row gap-4">
-                  <div className="w-[75%] text-custom-textgray text-xs">
+                  <div className="w-[75%] text-custom-textgray text-sm">
                     {selectedService.description}
                   </div>
                   <div className="w-[25%]">

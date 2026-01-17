@@ -43,7 +43,7 @@ export default function SkillBar({ label, value, play }: SkillBarProps) {
 
   return (
     <div className="space-y-1">
-      <div className="flex items-center justify-between text-xs xl:text-sm">
+      <div className="flex items-center justify-between text-xs xl:text-xs">
         <span className="text-custom-black font-medium">{label}</span>
         <span className="text-custom-black font-semibold tabular-nums">
           {shownValue}%

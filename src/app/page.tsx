@@ -18,13 +18,14 @@ export default function Home() {
     <MainPageTemplate>
       <HomeBannerVideo/>
       <AboutUsSection/>
-      <TechnologySection/>
       <OurServiceSection/>
       <OurProductsSection/>
       <OurProjectSection/>
+      <TechnologySection/>
       <OurClientSection/>
-      <WhyUsSection/>
+      
       <OurRecentWorkSection/>
+      <WhyUsSection/>
       <SomeDesignSection/>
       <TestimonialSection/>
       <OurBlogSection/>
