@@ -5,6 +5,8 @@ import React from "react";
 import { Autoplay, EffectFade } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "../css/TechMarquee.module.css";
+import "swiper/css";
+import "swiper/css/effect-fade";
 
 const HomeBannerVideo = () => {
   const technology = [
@@ -19,16 +21,16 @@ const HomeBannerVideo = () => {
 
   const partners = [
     {
-      imgsrc: "/images/google-partner-logo.webp",
+      imgsrc: "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768556608/google_partner_xwleqn.avif",
       imgalt: "google-partner-logo",
     },
     {
-      imgsrc: "/images/meta-business-partner-logo.webp",
+      imgsrc: "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768556802/meta_business_partner_vyanoz.avif",
       imgalt: "meta-business-partner-logo",
     },
 
     {
-      imgsrc: "/images/makeinindia.webp",
+      imgsrc: "https://res.cloudinary.com/db7fyrtvc/image/upload/v1768556801/makeinindia_x3bdyy.avif",
       imgalt: "makeinindia",
     },
   ];
@@ -43,7 +45,7 @@ const HomeBannerVideo = () => {
         preload="auto"
         className="w-full md:h-full h-[80vh] object-cover relative"
       >
-        <source src="/images/rebootslider.mp4" type="video/mp4" />
+        <source src="https://res.cloudinary.com/db7fyrtvc/video/upload/v1768556899/reboot_video_slider_wllchw.webm" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
@@ -68,10 +70,10 @@ const HomeBannerVideo = () => {
             <div className=" w-[20%] md:block hidden ">
               <Swiper
                 modules={[Autoplay, EffectFade]}
-                autoplay={{ delay: 3000, disableOnInteraction: false }}
+                autoplay={{ delay: 2000, disableOnInteraction: false }}
                 effect="fade"
                 loop={true}
-                speed={1000}
+                speed={500}
                 className="w-full"
               >
                 {partners.map((item, index) => (
@@ -95,10 +97,10 @@ const HomeBannerVideo = () => {
             <div className=" w-[40%]  md:hidden">
               <Swiper
                 modules={[Autoplay, EffectFade]}
-                autoplay={{ delay: 3000, disableOnInteraction: false }}
+                autoplay={{ delay: 2000, disableOnInteraction: false }}
                 effect="fade"
                 loop={true}
-                speed={1000}
+                speed={500}
                 className="w-full"
               >
                 {partners.map((item, index) => (

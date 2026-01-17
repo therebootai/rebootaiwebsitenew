@@ -19,7 +19,7 @@ const TestimonialSection = () => {
 
   const [slidesToShow, setSlidesToShow] = useState(5);
   const [playingIndex, setPlayingIndex] = useState<number | null>(null);
-  const videoRefs = useRef<HTMLVideoElement[]>([]);
+ const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
   const swiperRef = useRef<any>(null);
 
   useEffect(() => {
@@ -55,7 +55,7 @@ const TestimonialSection = () => {
     }
 
 
-    videoRefs.current[index].play();
+    videoRefs.current[index]?.play();
     setPlayingIndex(index);
   };
 
@@ -86,7 +86,7 @@ const TestimonialSection = () => {
   </section>
 
  
-  <div className="w-full bg-[linear-gradient(to_right,rgba(231, 254, 255, 0.87),#f5bdf9de)] py-8" >
+  <div className="w-full bg-linear-to-r from-custom-darkblue/20 to-custom-green/20 py-8" >
     <div className="max-w-[1200px] mx-auto px-4">
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
@@ -117,7 +117,7 @@ const TestimonialSection = () => {
             className="relative overflow-hidden group rounded-lg"
           >
             <video
-              ref={(el) => (videoRefs.current[index] = el!)}
+             ref={(el) => { videoRefs.current[index] = el }}
               src={item.video}
               className="w-[20rem] h-[22rem] min-w-full object-cover transition-transform duration-300 group-hover:scale-105"
               muted

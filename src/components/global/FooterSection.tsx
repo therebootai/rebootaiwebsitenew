@@ -5,104 +5,40 @@ import React, { useState } from "react";
 import { FaGlobe, FaInstagram, FaLinkedinIn, FaPhoneVolume, FaWhatsapp, FaYoutube } from "react-icons/fa6";
 import { IoMailSharp } from "react-icons/io5";
 import { HiLocationMarker, HiOutlineCurrencyRupee } from "react-icons/hi";
-import { BsChatQuote } from "react-icons/bs";
+import { BsChatQuote, BsExclamationDiamond } from "react-icons/bs";
 import { RiTwitterXLine } from "react-icons/ri";
+import { ServicesData } from "@/lib/servicesData";
 
 const Footer = () => {
   const footerLinks = [
     {
       head: "Web & APP Services",
       links: [
-        {
-          text: "Custom Website Development",
-          href: "/services/website-development-company-in-kolkata",
-        },
-        {
-          text: "E-commerce Store Development",
-          href: "/services/e-commerce-website-developer-in-kolkata",
-        },
-        {
-          text: "Web Application Development",
-          href: "/services/web-application-development-service-in-kolkata",
-        },
-        {
-          text: "Dynamic Website Development",
-          href: "/services/dynamic-website-development-service-in-siliguri",
-        },
-        {
-          text: "Saas Application Development",
-          href: "/services/saas-application-development-service-in-kolkata",
-        },
-        {
-          text: "Web Apps Development",
-          href: "/services/web-application-development-service-in-kolkata",
-        },
-        {
-          text: "Android App Development",
-          href: "/services/app-developer-in-kolkata-android-app-development",
-        },
-        {
-          text: " iOS App Development",
-          href: "/services/ios-app-development-company-in-siliguri",
-        },
-        {
-          text: "Flutter App Development",
-          href: "/services/flutter-developer-in-kolkata",
-        },
-        {
-          text: "AI & ML Integration",
-          href: "/services/ai-ml-integration-services-in-kolkata",
-        },
+              { text: "Custom Website Development", href: "/services/custom-website-development" },
+        { text: "Ecommerce Website Development", href: "/services/" },
+        { text: "Web Application Development", href: "/services/" },
+        { text: "SAAS Development", href: "/services/" },
+        { text: "Mobile Apps Development", href: "/services/" },
+        { text: "AI & ML Development", href: "/services/" },
       ],
     },
     {
       head: "Marketing Solutions",
       links: [
-        {
-          text: "Business Consultation",
-          href: "/services/business-consultation-service-in-kolkata",
-        },
-        {
-          text: "Performance Marketing",
-          href: "/services/performance-marketing-agency-in-kolkata",
-        },
-        {
-          text: "PR & Brand Building",
-          href: "/services/influencer-marketing-agency-in-kolkata",
-        },
-        {
-          text: "Google Marketing",
-          href: "/services/seo-agency-in-kolkata",
-        },
-        {
-          text: "Social Media Solutions",
-          href: "/services/social-media-agency-in-siliguri",
-        },
-        {
-          text: " IT Consultation",
-          href: "/services/it-consultation-service-in-kolkata",
-        },
-        {
-          text: "Web & Apps Security",
-          href: "/services/cyber-security-service-in-kolkata",
-        },
-        {
-          text: "Creative UI Design",
-          href: "/services/ui-ux-developer-in-kolkata",
-        },
-        {
-          text: "Brand Starter Solution",
-          href: "/services/brand-starter-solution-agency-in-kolkata",
-        },
-        {
-          text: "Cloud Server Setup",
-          href: "/services/cloud-server-setup",
-        },
+          { text: "Google Marketing", href: "/services/" },
+        { text: "Social Media Marketing", href: "/services/" },
+        { text: "Whatsapp API Marketing", href: "/services/" },
+        { text: "Influencer Marketing", href: "/services/" },
+        { text: "Lead Generation Service", href: "/services/" },
+        { text: "PR & Branding", href: "/services/" },
       ],
     },
     {
-      head: "Our Products",
+      head: "Smart Solutions & Products",
       links: [
+        { text: "Business Consultation", href: "/services/" },
+        { text: "Cloud Server Setup", href: "/services/" },
+        { text: "UI & UX Solution", href: "/services/" },
         {
           text: "Educational CRM Advanced",
           href: "/products/educational-CRM-advanced",
@@ -115,66 +51,23 @@ const Footer = () => {
           text: "Service Center Management CRM ",
           href: "/products/service-center-management-crm",
         },
-        {
-          text: "Engineering Student App",
-          href: "#",
-        },
-        {
-          text: "Ecommerce Application",
-          href: "#",
-        },
-        {
-          text: "Pharma Company Management",
-          href: "#",
-        },
-        {
-          text: "Doctor Video Consultation",
-          href: "#",
-        },
-        {
-          text: "WhatsApp Oficial API",
-          href: "#",
-        },
-        {
-          text: "Food Delivery App",
-          href: "#",
-        },
-        {
-          text: "OTT Streaming App",
-          href: "#",
-        },
       ],
     },
     {
       head: "Quick Links",
       links: [
-        {
-          text: "home",
-          href: "/",
-        },
+        
         {
           text: "About Us",
           href: "/about",
         },
         {
-          text: "Life at Reboot",
-          href: "#",
+          text: "Services",
+          href: "/services",
         },
         {
-          text: "Privacy Policy",
-          href: "/images/Privacy Policy.pdf",
-        },
-        {
-          text: "Refund Policy",
-          href: "/images/Refund Policy.pdf",
-        },
-        {
-          text: "Terms of Services",
-          href: "/images/Terms & Conditions.pdf",
-        },
-        {
-          text: "Portfolios",
-          href: "/portfolios",
+          text: "Products",
+          href: "/products",
         },
         {
           text: "career",
@@ -192,9 +85,20 @@ const Footer = () => {
     },
   ];
 
+    const nonSeoServices = ServicesData.filter(item => item.category === "SEO");
+
+    const capitalizeWords = (str: string) => {
+  return str
+    .toLowerCase()
+    .split(' ')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ')
+}
+
+
   return (
-    <footer className=" relative">
-      <div className="absolute inset-0 z-0">
+    <footer className=" relative ">
+      <div className="absolute inset-0 z-0 ">
         <Image
           src="/images/footer-bg.png"
           alt="Footer Background"
@@ -202,15 +106,16 @@ const Footer = () => {
           className="opacity-75 object-cover"
         />
       </div>
-      <div className="bg-[#222]/85 relative z-10 p-8 xlg:p-16 flex flex-col gap-11">
-        <div className="grid lg:grid-cols-4 grid-cols-1 gap-8">
+      <div className="bg-[#222]/85 relative">
+      <div className=" relative z-10 w-full max-w-[1200px] mx-auto p-4 xlg:p-8 flex flex-col gap-11">
+        <div className="grid lg:grid-cols-4 grid-cols-1 gap-4">
           {footerLinks.map((item, index) => (
             <div className="flex flex-col gap-3" key={index}>
-              <h2 className="xlg:text-lg lg:text-sm text-lg font-bold text-justify text-white flex items-center gap-1">
+              <h2 className="xlg:text-sm lg:text-sm text-lg font-bold text-justify text-white flex items-center gap-1">
                 <span>{item.head}</span>
-                <span className="bg-[linear-gradient(90deg,_#4385F5_0%,_rgba(67,_133,_245,_0.00)_100%)] w-12 h-1"></span>
+                <span className="bg-[linear-gradient(90deg,_#4385F5_0%,_rgba(67,_133,_245,_0.00)_100%)] w-12 h-0.5"></span>
               </h2>
-              <ul className="flex flex-col lg:text-xs text-base xlg:text-base gap-2 leading-5">
+              <ul className="flex flex-col lg:text-xs text-base xlg:text-sm gap-2 leading-5">
                 {item.links.map((link, count) => (
                   <Link
                     href={link.href}
@@ -234,29 +139,29 @@ const Footer = () => {
                 alt="logo"
                 width={253}
                 height={46}
-                className=" lg:h-[2rem] h-[3rem] xlg:h-[3rem] w-full"
+                className=" lg:h-[2rem] h-[3rem] xlg:h-[2rem] w-full"
               />
             </Link>
-            <p className="xlg:text-base lg:text-sm text-base text-white ">
+            <p className="xlg:text-sm lg:text-sm text-sm text-white ">
               Reboot AI Pvt. Ltd. is most growing IT company in North East India
               including Siliguri, Kolkata. We provide Tech & Marketing Solution
               for your business.
             </p>
           </div>
-          <div className="flex flex-col gap-1 ">
-            <h2 className="xlg:text-lg lg:text-base text-lg font-bold text-justify text-white flex items-center gap-1">
+          <div className="flex flex-col gap-2 ">
+            <h2 className="xlg:text-base lg:text-base text-lg font-bold text-justify text-white flex items-center gap-1">
               <span>Our Reg. No.</span>
               <span className="bg-[linear-gradient(90deg,_#4385F5_0%,_rgba(67,_133,_245,_0.00)_100%)] w-12 h-1"></span>
             </h2>
-            <p className="xlg:text-base lg:text-sm text-base text-white whitespace-nowrap">
+            <p className="xlg:text-sm lg:text-sm text-base text-white whitespace-nowrap">
               CIN No: U62012WB2024PTC274361
             </p>
-            <p className="xlg:text-base lg:text-sm text-base text-white whitespace-nowrap">
+            <p className="xlg:text-sm lg:text-sm text-base text-white whitespace-nowrap">
               MSME No: UDYOG-WB-14-000000
             </p>
           </div>
-          <div className="flex flex-col gap-1  xlg:text-base lg:text-sm text-base">
-            <h2 className="xlg:text-lg lg:text-base text-lg font-bold text-justify text-white flex items-center gap-1">
+          <div className="flex flex-col gap-2  xlg:text-sm lg:text-sm text-base">
+            <h2 className="xlg:text-base lg:text-base text-lg font-bold text-justify text-white flex items-center gap-1">
               <span>Get in touch</span>
               <span className="bg-[linear-gradient(90deg,_#4385F5_0%,_rgba(67,_133,_245,_0.00)_100%)] w-12 h-1"></span>
             </h2>
@@ -275,23 +180,23 @@ const Footer = () => {
               <Link href="mailTo:info@rebootai.in">info@rebootai.in</Link>
             </p>
           </div>
-          <div className="flex flex-col gap-1">
-            <h2 className="xlg:text-lg lg:text-base text-lg font-bold text-justify text-white flex items-center gap-1">
+          <div className="flex flex-col gap-2">
+            <h2 className="xlg:text-base lg:text-base text-lg font-bold text-justify text-white flex items-center gap-1">
               <span>Our Reg. Offices</span>
               <span className="bg-[linear-gradient(90deg,_#4385F5_0%,_rgba(67,_133,_245,_0.00)_100%)] w-12 h-1"></span>
             </h2>
-            <p className="xlg:text-base lg:text-sm text-base text-white flex gap-1">
+            <div className="xlg:text-sm lg:text-sm text-base text-white flex gap-1">
               <HiLocationMarker className="text-primary w-[2rem] text-xl" />
-              <div>
+              <p>
                 4th Floor, Shib Shankar Market, Bidhan Road Siliguri, West
                 Bengal, IN 734001
-              </div>
-            </p>
+              </p>
+            </div>
           </div>
         </div>
         <div className="h-0.5 w-full bg-[rgba(139,139,139,0.6)]"></div>
-        <div className="flex justify-between gap-8 lg:gap-20 flex-col lg:flex-row">
-          <div className="min-h-20 xl:min-h-32 w-full lg:w-[17.65vw] relative">
+        <div className=" md:grid-cols-2 grid-cols-1 grid lg:grid-cols-4 gap-4">
+          <div className=" h-[7rem] lg:w-full lg:h-full relative">
             <Image
               src="/images/msme.png"
               alt="msme"
@@ -299,33 +204,29 @@ const Footer = () => {
               className="object-contain"
             />
           </div>
-          <div className="flex flex-col justify-between gap-2 xlg:gap-0">
+          <div className="flex flex-col justify-between gap-2 xlg:gap-2">
             <button
               type="button"
-              className="text-sm xl:text-base font-bold text-white px-4 xl:px-10 py-2 bg-primary inline-flex items-center gap-2 rounded-lg"
+              className="text-sm xl:text-base font-bold text-white px-4 xl:px-10 py-2 bg-custom-darkblue inline-flex items-center gap-2 rounded-lg"
             >
               <HiOutlineCurrencyRupee /> <span>Pay Online</span>
             </button>
             <button
               type="button"
-              className="text-sm xl:text-base font-bold text-white px-4 xl:px-10 py-2 bg-primary inline-flex items-center gap-2 rounded-lg"
+              className="text-sm xl:text-base font-bold text-white px-4 xl:px-10 py-2 bg-custom-darkblue inline-flex items-center gap-2 rounded-lg"
             >
               <BsChatQuote /> <span>Ge A Quote</span>
             </button>
             <Link
               href={"/contact-us"}
               type="button"
-              className="text-sm xl:text-base font-bold text-white px-4 xl:px-10 py-2 bg-primary inline-flex items-center gap-2 rounded-lg"
+              className="text-sm xl:text-base font-bold text-white px-4 xl:px-10 py-2 bg-custom-darkblue inline-flex items-center gap-2 rounded-lg"
             >
-              <img
-                src="/icons/complainus.svg"
-                alt="meta"
-                className="object-contain h-[1.5rem]"
-              />{" "}
-              <span>Complain Us!</span>
+             
+             <BsExclamationDiamond /> <span>Complain Us!</span>
             </Link>
           </div>
-          <div className="min-h-20 xlg:min-h-28 w-full lg:w-48 xlg:w-64 relative bg-white rounded-lg">
+          <div className="h-[7rem] lg:w-full lg:h-full  relative bg-white rounded-lg">
             <Image
               src="/images/google-partner-logo.webp"
               alt="google"
@@ -333,7 +234,7 @@ const Footer = () => {
               className="object-contain"
             />
           </div>
-          <div className="min-h-20 xlg:min-h-28 w-full lg:w-48 xlg:w-64 relative bg-white rounded-lg">
+          <div className="h-[7rem] lg:w-full lg:h-full relative bg-white rounded-lg">
             <Image
               src="/images/meta-business-partner-logo.webp"
               alt="meta"
@@ -341,6 +242,25 @@ const Footer = () => {
               className="object-contain"
             />
           </div>
+        </div>
+
+ <div className="h-0.5 w-full bg-[rgba(139,139,139,0.6)]"></div>
+          <div className="grid lg:grid-cols-4 grid-cols-1 gap-4">
+          {nonSeoServices.map((item, index) => (
+            <div className="flex flex-col gap-3" key={index}>
+             
+              <ul className="flex flex-col lg:text-xs text-base xlg:text-[13px] gap-2 ">
+                  <Link
+                    href={`/services/${item.slug}`}
+                    className="flex items-center capitalize gap-2 text-white"
+                    key={index}
+                  >
+                    <span className="text-primary">&gt;</span>
+                    <span className="">{capitalizeWords(item.heading)}</span>
+                  </Link>
+              </ul>
+            </div>
+          ))}
         </div>
         <div className="h-0.5 w-full bg-[rgba(139,139,139,0.6)]"></div>
         <div className="flex items-center lg:items-stretch flex-col gap-4 lg:flex-row justify-between">
@@ -396,7 +316,7 @@ const Footer = () => {
           </h1>
         </div>
       </div>
-
+</div>
 
     </footer>
   );

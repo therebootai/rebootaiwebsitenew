@@ -25,7 +25,7 @@ const OurProductsSection = () => {
   ];
   return (
     <div className=" flex  justify-center items-center">
-      <div className=" w-ful max-w-[1200px]  lg:p-8 p-4 flex flex-col gap-4">
+      <div className=" w-full max-w-[1200px]  lg:p-8 p-4 flex flex-col gap-4">
         <div className=" flex flex-col gap-2">
         <h4>Our Products</h4>
         <div className=" flex justify-between items-center ">
