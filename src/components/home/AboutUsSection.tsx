@@ -54,7 +54,7 @@ const AboutUsSection = () => {
   return (
     <div ref={ref} className=" w-full flex justify-center items-center">
       <div className=" w-full max-w-[1200px]    lg:p-8  p-4 flex flex-col lg:flex-row gap-4">
-        <div className="lg:w-[40%] w-full relative group "    style={{
+        <div className="lg:w-[40%] w-full relative group overflow-hidden"    style={{
           height: isSmallScreen ? "auto" : `${rightSideHeight}px`,
         }}>
           <Image
@@ -71,21 +71,27 @@ const AboutUsSection = () => {
             alt="Enquiry Hover"
             className="w-full h-full object-cover rounded-md transition-opacity duration-500 ease-out opacity-0 group-hover:opacity-100 absolute top-0 left-0"
           />
-          <div className="  absolute bg-white pr-2 pt-2 rounded-tr-lg  bottom-0 left-0 group-hover:opacity-0">
-            <div className=" w-[10rem] h-[6rem] rounded-bl-lg rounded-tr-lg bg-linear-to-r from-custom-darkblue to-custom-lightblue flex justify-center items-center">
-              <RebootLogoIconWhite />
-            </div>
-          </div>
-          <div className=" grid grid-cols-2 gap-4 px-8 absolute top-8  w-full group-hover:opacity-0">
-            <div className=" h-[5rem] w-full flex flex-col  justify-center items-center bg-blur-[2px] border border-white text-white  bg-black/10 backdrop-blur-[2px] rounded-lg">
-              <h1 className=" text-2xl font-semibold ">250+</h1>
-              <h3 className=" text-lg font-medium">Satisfied Clients</h3>
-            </div>
-            <div className=" h-[5rem] w-full flex flex-col justify-center items-center bg-blur-[2px] border border-white text-white bg-black/10 backdrop-blur-[2px] rounded-lg">
-              <h1 className=" text-2xl font-semibold ">250+</h1>
-              <h3 className=" text-lg font-medium">Satisfied Clients</h3>
-            </div>
-          </div>
+         <div className="absolute bg-white pr-2 pt-2 rounded-tr-lg bottom-0 left-0 
+    transition-all duration-500 ease-in-out 
+    group-hover:opacity-0 group-hover:-translate-x-4 group-hover:translate-y-4">
+    
+    <div className="w-[10rem] h-[6rem] rounded-bl-lg rounded-tr-lg bg-linear-to-r from-custom-darkblue to-custom-lightblue flex justify-center items-center">
+        <RebootLogoIconWhite />
+    </div>
+</div>
+         <div className="grid grid-cols-2 gap-4 px-8 absolute top-8 w-full 
+    transition-all duration-500 ease-in-out 
+    group-hover:opacity-0 group-hover:-translate-y-8">
+    
+    <div className="h-[5rem] w-full flex flex-col justify-center items-center bg-blur-[2px] border border-white text-white bg-black/10 backdrop-blur-[2px] rounded-lg">
+        <h1 className="text-2xl font-semibold">250+</h1>
+        <h3 className="text-lg font-medium">Satisfied Clients</h3>
+    </div>
+    <div className="h-[5rem] w-full flex flex-col justify-center items-center bg-blur-[2px] border border-white text-white bg-black/10 backdrop-blur-[2px] rounded-lg">
+        <h1 className="text-2xl font-semibold">250+</h1>
+        <h3 className="text-lg font-medium">Satisfied Clients</h3>
+    </div>
+</div>
         </div>
         <div className=" lg:w-[60%] w-full flex flex-col gap-4"    ref={leftSideRef}>
           <h4 className=" text-custom-black text-sm xl:text-base font-medium">

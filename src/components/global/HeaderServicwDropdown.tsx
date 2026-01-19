@@ -17,7 +17,7 @@ const HeaderServicwDropdown = () => {
       icon: <WebDevelopment />,
       submenu: [
         { name: "Custom Website Development", href: "/services/custom-website-development" },
-        { name: "Ecommerce Website Development", href: "/services/" },
+        { name: "Ecommerce Website Development", href: "/services/ecommerce-website-development" },
         { name: "Web Application Development", href: "/services/" },
         { name: "SAAS Development", href: "/services/" },
         { name: "Mobile Apps Development", href: "/services/" },
