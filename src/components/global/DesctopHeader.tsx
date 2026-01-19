@@ -109,7 +109,7 @@ const scheduleClose = () => {
     },
     {
       text: "Services",
-      href: "",
+      href: "/service",
     },
     {
       text: "Products",
@@ -151,13 +151,13 @@ const scheduleClose = () => {
           scrolled ? "top-0 shadow-xl bg-linear-to-r from-custom-black to-custom-black " : " top-0 bg-transparent  "
         }`}
       >
-        {scrolled ? (<div className=" w-full  absolute">
-          <div className=" absolute size-[15rem] md:size-[20rem] left-[40%] bg-custom-green bottom-8 blur-[120px] rounded-b-full"></div>
-           <div className=" absolute size-[15rem] md:size-[20rem] left-0 bg-custom-darkblue bottom-8 blur-[120px] rounded-b-full"></div>
-           <div className=" absolute size-[15rem] md:size-[20rem] right-0 bg-custom-darkblue bottom-8 blur-[120px] rounded-b-full"></div>
+        {scrolled ? (<div className=" w-full  absolute inset-0 overflow-hidden z-[80]">
+          <div className=" absolute size-[10rem] md:size-[20rem] left-[40%] bg-custom-green bottom-8 blur-[150px] rounded-b-full"></div>
+           <div className=" absolute size-[10rem] md:size-[20rem] left-0 bg-custom-darkblue bottom-8 blur-[150px] rounded-b-full"></div>
+           <div className=" absolute size-[10rem] md:size-[20rem] right-0 bg-custom-darkblue bottom-8 blur-[150px] rounded-b-full"></div>
 
         </div>):""}
-        <div className=" max-w-[1200px] w-full  h-full flex justify-between items-center  py-4   lg:px-8  px-4">
+        <div className=" max-w-[1200px] w-full  h-full flex justify-between items-center  py-4 z-[100]   lg:px-8  px-4">
           {/* Logo */}
 
           <Link href={"/"}>
